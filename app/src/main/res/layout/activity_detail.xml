@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/fastfood" />
+
+            <TextView
+                android:id="@+id/namelbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Food Name"
+                android:textColor="#0E0C0C"
+                android:textSize="29sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#92B3A6A6"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/subtract"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_baseline_indeterminate_check_box_24" />
+
+
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="0"
+                    android:textSize="30sp" /><ImageView
+                android:id="@+id/add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="150dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_add_box_24" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detailDesciption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="dwqbhjdbj den jnj nj denj dc cbd cbd wqjdwd eed dc dfe d cj hchj wchj dj cce hjewh jehj ewhjdhj wedh je he" />
+
+        <EditText
+            android:id="@+id/namebox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Your name"
+            android:inputType="textPersonName"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/phonebox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="9dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="Price"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="#AC0909"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/pricelbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="#CF0D0D"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/insertButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btnbg"
+            android:text="order now" />
+
+    </LinearLayout>
+
+</LinearLayout>
